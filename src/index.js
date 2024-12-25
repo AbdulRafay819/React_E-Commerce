@@ -17,7 +17,8 @@ import {
   Register,
   Checkout,
   PageNotFound,
-} from "./pages";
+  ForgetPassword,
+} from "./pages"; // Ensure ForgetPassword is in the "pages" directory or update the import path
 import ScrollToTop from "./components/ScrollToTop";
 import { Toaster } from "react-hot-toast";
 
@@ -36,6 +37,7 @@ root.render(
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/forgetpassword" element={<ForgetPassword />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="/product/*" element={<PageNotFound />} />
         </Routes>
